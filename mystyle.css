@@ -12,8 +12,39 @@ body {
 
 .sideboard {
     background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 40px;
+    gap: 40px;
 
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 100px 1fr 2fr;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    gap: 20px;
+}
+
+#dashboard {
+ justify-self: flex-start;
+ font-size: 30px;
+}
+
+.sections {
+    display: grid;
+}
+
+.sideboard svg {
+    margin-right: 15px;
+}
+
+.config div {
+    height: 71px;
 }
 
 .header {
@@ -23,6 +54,85 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    gap: 30px;
+}
+
+
+#lupa {
+    position: relative;
+    top: 14px;
+}
+
+.searchbar {
+    display: grid;
+    align-items: flex-start;
+}
+
+#searchbar {
+   background-color: rgb(207, 223, 233);
+   border: solid rgb(207, 223, 233); 
+   border-radius: 20px;
+   width: 80%;
+   height: 25px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: flex-end;
+    align-items: center;
+    margin-top: -20px;
+    
+}
+
+.username {
+    font-weight: bolder;
+    font-size: 20px;
+    justify-self: center;
+}
+
+#avatarlogo {
+    height: 45px;
+}
+
+.username_welcome {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+}
+
+#avatar {
+    height: 80px;
+}
+
+.welcome {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#userwelcome {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.actionbuttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-content: center;
+    gap: 30px;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    height: 40px;;
+    border-radius: 20px;
+    border: solid cornflowerblue;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .main {
@@ -33,6 +143,13 @@ body {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+#yourProjects {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px;
 }
 
 .projects {
@@ -45,7 +162,7 @@ body {
     padding: 10px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 
 }
@@ -54,10 +171,12 @@ body {
     display: grid;
 
     background-color: white;
-    padding: 20px;
+    padding: 30px;
+    gap: 30px;
     border-radius: 5px;
-    height: 200px;
-    border-left: solid 10px orange;
+    height: auto;
+    border-left: solid 10px rgb(241, 108, 107);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cardicons {
@@ -67,4 +186,60 @@ body {
 
 .rightcolumn {
     grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 40px;
+}
+
+.announcements {
+    grid-row: 1;
+}
+
+.announcements_header{
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.announcements_container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ann {
+    border-bottom: solid rgb(207, 223, 233) 1px;
+    padding-bottom: 15px;
+}
+
+.anntext {
+    color: grey;
+}
+
+.trendings {
+    grid-row: 2;
+    margin-top: -50px;
+}
+
+.trending_header {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.trending_container {
+    display: grid;
+
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
